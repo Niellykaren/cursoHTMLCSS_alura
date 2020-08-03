@@ -9,13 +9,15 @@ h1, h2 {
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
 
-.titulo {
+.titulo-principal {
 	text-align: center;
 	background-color: #851944;
 	color: #FFF;
 	padding: 25px;
 	border-bottom: 10px solid black;
 	font-size: 60px;
+	text-transform: uppercase;
+	width: 100%;
 }
 
 p {
@@ -23,7 +25,7 @@ p {
 	margin: 20px 0;
 }
 
-.citacao {
+.citacao-bio {
 	background-color: #D9E5E3;
 	border: 10px solid #C2CCCA;
 	width: 250px;
@@ -31,47 +33,44 @@ p {
 	margin: 20px 40px;
 }
 
-aside {
+.navegacao-site {
+	text-align: center;
 	background-color: #3C1D3D;
 	color: #F2FFFC;
 }
 
-footer {
+.rodape {
 	background-color: #000;
 	color: #F2FFFC;
-}
-
-nav a {
-	color: #F2FFFC;
+	clear: both;
+	position: fixed;
+	bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 main a {
 	color: #851944;
 }
 
-aside a {
+.navegacao-site a {
 	color: inherit;
 	font-family: "Open Sans Condensed", sans-serif;
 }
 
-.citacao, blockquote, aside, footer {
+.citacao-bio, .navegacao-site, footer {
     padding: 20px;
 }
 
-.texto {
+.container {
 	width: 720px;
 	margin: auto;
 	padding: 30px 0;
 }
 
-aside {
-	text-align: center;
-}
-
-aside h1 {
+.navegacao-site h1 {
 	font-size: 30px;
 	margin-bottom: 25px;
-
 }
 
 strong {
@@ -82,26 +81,100 @@ em {
 	font-style: italic;
 }
 
-h2 {
+.subtitulo-texto {
 	font-size: 30px;
+	clear: both;
 }
 
-.social {
+.icones-redes-sociais li {
 	display: inline-block;
 }
-.rodape{
-	background-color: #000;
-    color: #F2FFFC;
-    padding: 20px;
-}
-article{
+
+.artigo {
 	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+.leia-mais {
+	padding: 8px;
+	margin: 16px;
+	display: block;
+	font-size: 24px;
+	text-align: center;
+	background-color: #E6E7E8;
+}
+
+nav a {
+	text-transform: lowercase;
+}
+
+.icones-redes-sociais a {
+	font-size: 40px;
+	display: block;
+	
+}
+
+.fiat {
+	float: right;
+}
+
+.petrobras {
+	float: left;
+}
+
+main {
+	float: left;
+	width: 85%;
+	padding-bottom: 80px;
+}
+
+.minha-foto, .navegacao-site {
+	float: right;
+	width: 15%;
+	box-sizing: border-box;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+	position: relative;
+    top: 290px;
+}
+
+cite {
+	font-style: italic;
+	float: right;
+}
+.minha-foto{
+	width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.article {
+    padding-bottom: 30px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
 }
-.navegacao-site {
-    background-color: #3C1D3D;
-    color: #F2FFFC;
-    padding: 20px;
+
+.leia {
+    padding: 8px;
+    margin: 16px;
+    display: block;
+    font-size: 24px;
     text-align: center;
+	background-color: #E6E7E8;
+}
+.sites li{
+	margin-right: 16px;
+	margin-bottom: 16px;
+	width: 45%;
+	padding: 16px;
+	background-color: #FAFFFC;
+	border:  8px black;
+	display: inline-block;
+	box-sizing: border-box;
+	
+}
+.sites img{
+	width: 100%;
 }
